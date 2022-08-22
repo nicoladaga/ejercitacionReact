@@ -1,0 +1,25 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 110px;
+    background-color: orange
+}
+
+.navbar-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+
+.navbar-list-element{
+    padding: 0.5rem;
+}
+
+.navbar-login{
+    padding: 0.5rem;
+}
