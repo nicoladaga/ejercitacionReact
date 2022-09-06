@@ -1,5 +1,5 @@
 import './Item.css'
-const Item = ({id, segmento, imagen, nombre, precio}) => {
+const Item = ({id, segmento, imagen, nombre, precio, descripcion}) => {
   return (
 
         <div className="item">
@@ -8,7 +8,9 @@ const Item = ({id, segmento, imagen, nombre, precio}) => {
                 <h1 >{segmento}</h1>
                 <p >{nombre}</p>
                 <p >{precio}</p>
+                <p className="descripcion"> {descripcion}</p>
             </div>
+
         </div>
    
   )

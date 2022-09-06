@@ -6,6 +6,9 @@
     padding: 1rem;
     width: 20%;
     height: max-content;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 2%;
     
 }
 
@@ -20,4 +23,8 @@
     align-items: center;
     font-size: medium;
     padding-left: 1rem;
+}
+
+.descripcion{
+    font-size: small
 }

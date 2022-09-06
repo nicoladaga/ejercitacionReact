@@ -7,6 +7,7 @@ const data = [
         imagen: "https://puppis.vteximg.com.br/arquivos/ids/166102-1000-1000/121056.png?v=636881832779930000",
         nombre: "Balanced Gato Adulto",
         precio: "$5000",
+        descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
         boton: "balancedGatoAd",
     },
     {
