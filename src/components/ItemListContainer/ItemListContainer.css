@@ -1,9 +1,6 @@
-.contador{
+.itemlist{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    width: 90%;
     justify-content: space-evenly;
-}
-
-.elemento{
-    padding: 0.5rem
 }

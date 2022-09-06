@@ -1,40 +1,39 @@
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
 import './ItemListContainer.css'
+import ItemCount from '../ItemCount/ItemCount'
+import data from './mock-data'
+import ItemList from '../ItemList/ItemList'
 
 
-const ItemListContainer = ({stock, initial, onAdd}) => {
-  const [valorInicial, setValorInicial] = useState(initial);
-  const [stockDisponible, setStockDisponible] = useState(stock);
-  
-  const quitarArticulo= () =>{
-    if( (valorInicial - onAdd) >= 0 ){
-      setValorInicial( valorInicial - onAdd);
-      setStockDisponible( stockDisponible + onAdd);
-    } else{
-      alert("No puede quitar más artículos")
-    }
-  }
+const ItemListContainer = ({ greeting }) => {
 
-  const agregarArticulo = () => {
-    if((stockDisponible - onAdd) >= 0 ){
-      setValorInicial( valorInicial + onAdd);
-      setStockDisponible( stockDisponible - onAdd);
-    } else{
-      alert("No hay suficiente stock de dicho artículo")
-    }
-  }
- 
+  const [items, setItems] = useState([]);
+
+  const getData = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+      resolve(data);
+    }, 2000)
+
+  })
+
+  useEffect(() => {
+    getData.then((result) => {
+      setItems(result)
+    })
+  }, [])
 
   return (
     <>
-    <div className='contador'>
-      <div className='elemento' onClick={quitarArticulo}>-</div>
-      <div className='elemento'>{valorInicial}</div>
-      <div className='elemento' onClick={agregarArticulo}>+</div>
-    </div>
+      <h2>{greeting}</h2>
+      <ItemCount stock={5} initial={0} onAdd={1}/>
+      <div className="itemlist">
+        <ItemList itemList={items} />
+      </div>
     </>
+
+
   )
 }
 
 export default ItemListContainer
- 
