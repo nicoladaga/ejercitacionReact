@@ -17,10 +17,23 @@
 }
 
 .navbar-list-element{
-    font-size: larger;
+    font-size: xx-large;
     padding: 0.5rem;
+    
 }
 
 .navbar-login{
     padding: 0.5rem;
+}
+
+.logo{
+    padding: 0.5rem;
+}
+
+.linkActivo{
+    color: white
+}
+
+.linkInactivo{
+    opacity: 0.5;
 }
