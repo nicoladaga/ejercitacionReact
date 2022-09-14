@@ -9,6 +9,7 @@ const data = [
         precio: "$5000",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
         boton: "balancedGatoAd",
+        stock: "4"
     },
     {
         id: "2",
@@ -18,6 +19,7 @@ const data = [
         precio: "$4000",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
         boton: "catChowAd",
+        stock: "4"
     },
     {
         id: "3",
@@ -27,6 +29,7 @@ const data = [
         precio: "$3500",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
         boton: "balancedPerroAd",
+        stock: "4"
     },
     {
         id: "4",
@@ -35,7 +38,8 @@ const data = [
         nombre: "Premium Perro Adulto",
         precio: "$3200",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
-        boton: "premiumPerroAd"
+        boton: "premiumPerroAd",
+        stock: "4"
      },
      {
         id: "5",
@@ -44,7 +48,8 @@ const data = [
         nombre: "Proplan Perro Adulto",
         precio: "$4300",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
-        boton: "proplanPerroAd"
+        boton: "proplanPerroAd",
+        stock: "4"
      },
      {
         id: "6",
@@ -53,7 +58,8 @@ const data = [
         nombre: "Helado de Juguete",
         precio: "$650",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
-        boton: "jugueteHelado"
+        boton: "jugueteHelado",
+        stock: "4"
      },
      {
         id: "7",
@@ -62,7 +68,8 @@ const data = [
         nombre: "Soga y pelota",
         precio: "$620",
         descripcion: "Balanced Gato Adulto es la línea nutricional clásica para gatos de 1 a 7 años, contiene proteínas de alta calidad que aseguran el mantenimiento de una excelente masa muscular fuerte y magra",
-        boton: "sogaYPelota"
+        boton: "sogaYPelota",
+        stock: "4"
      }
 ]
 

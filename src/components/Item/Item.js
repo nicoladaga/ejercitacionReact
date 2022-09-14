@@ -2,7 +2,7 @@ import './Item.css'
 import {Link} from 'react-router-dom'
 
 
-const Item = ({id, segmento, imagen, nombre, precio, descripcion}) => {
+const Item = ({id, segmento, imagen, nombre, precio, descripcion, stock}) => {
   
   return (
 
@@ -10,7 +10,7 @@ const Item = ({id, segmento, imagen, nombre, precio, descripcion}) => {
             <img className="imagen" src={imagen} alt={nombre} />
             <div className="detalle">
                 <h4>{nombre}</h4>
-                <h5>{precio}</h5>
+                <h5>precio: {precio} stock: {stock}</h5>
                 <p className="descripcion"> {descripcion}</p>
             </div>
             
