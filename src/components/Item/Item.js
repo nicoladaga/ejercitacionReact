@@ -10,7 +10,8 @@ const Item = ({id, segmento, imagen, nombre, precio, descripcion, stock}) => {
             <img className="imagen" src={imagen} alt={nombre} />
             <div className="detalle">
                 <h4>{nombre}</h4>
-                <h5>precio: {precio} stock: {stock}</h5>
+                <h5>Precio: {precio}</h5>
+                <h5>Stock: {stock}</h5>
                 <p className="descripcion"> {descripcion}</p>
             </div>
             
