@@ -4,6 +4,7 @@ import './ItemCount.css'
 
 const ItemCount = ({ stock, initial, onAdd }) => {
     //inicializo los estados del valor inicial
+    
     const [valorInicial, setValorInicial] = useState(initial);
     
 

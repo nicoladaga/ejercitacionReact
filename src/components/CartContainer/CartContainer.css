@@ -1,0 +1,33 @@
+.contenedorCarrito{
+    border-style: solid;
+    border-color: orange;
+    padding: 0.5rem;
+    width:max-content
+}
+
+.contenedorCarrito-items{
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: solid;
+    border-color: orange;
+
+}
+
+.contenedorCarrito-botonRemover{
+    margin-left: 0.5rem;
+    height: 50%;
+    align-self: center;
+    background-color: orangered;
+    color: white;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.contenedorCarrito-botonVaciar{
+    background-color: orangered;
+    color: white;
+    border-radius: 10%;
+    cursor: pointer;
+    width: 30%;
+    font-size:medium;
+}

@@ -1,7 +1,19 @@
 import Item from "../Item/Item"
-
+import { CartContext } from "../../context/CartContext";
+import {useContext} from 'react'
 
 const ItemList = ({ itemList }) => {
+
+    const {productCartList, isInCart} = useContext(CartContext);
+    
+    const itemStock = (item)=> {
+        if(isInCart(item.id)){
+            const productoExistente = productCartList.find(producto => producto.id === item.id)
+            return item.stock - productoExistente.quantity
+        }else{
+            return item.stock
+        }
+    }
 
     return (
         <>
@@ -14,7 +26,7 @@ const ItemList = ({ itemList }) => {
                 imagen={producto.imagen} 
                 nombre={producto.nombre} 
                 precio={producto.precio}
-                stock={producto.stock} 
+                stock={itemStock(producto)} 
                 />
             )
             })}
