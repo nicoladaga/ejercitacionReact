@@ -4,7 +4,7 @@
     background-color: orange;
     opacity: 0.8;
     color: white;
-    border-radius: 15%;
+    border-radius: 10px;
     width: 60%;
 }
 .stockTitle{
@@ -27,7 +27,7 @@
     width: 20%;
     font-size: larger;
     background-color: transparent;
-    border-radius: 15%;
+    border-radius: 10px;
     color:white;
     border-color: white;
     border-width: 0.2rem;
@@ -35,7 +35,7 @@
 
 .botonAgregar{
     background-color: transparent;
-    border-radius: 20%;
+    border-radius: 10px;
     color:white;
     border-color: white;
     border-width: 0.2rem;

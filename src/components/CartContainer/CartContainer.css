@@ -31,3 +31,11 @@
     width: 30%;
     font-size:medium;
 }
+
+.botonContinuarComprando{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    cursor: pointer
+}
