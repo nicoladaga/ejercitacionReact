@@ -1,33 +1,44 @@
 import { useState, useEffect } from 'react'
 import './ItemListContainer.css'
-import ItemCount from '../ItemCount/ItemCount'
-import data from './mock-data'
 import ItemList from '../ItemList/ItemList'
 import {useParams} from 'react-router-dom'
-
+import {db} from "../../utils/firebase"
+import {getDocs, collection, query, where} from "firebase/firestore"
 
 const ItemListContainer = ({ greeting }) => {
 
   const [items, setItems] = useState([]);
   const {segmentoId} = useParams();
-  const getData = new Promise((resolve, reject) => {
-
-    setTimeout(() => {
-      resolve(data);
-    }, 2000)
-
-  })
-
+  
+  
+  
   useEffect(() => {
-    getData.then((result) => {
-
+    const getData = new Promise((resolve, reject) => {
+      let queryRef;
       if(segmentoId){
-        const listaProductos = result.filter(item => item.segmento === segmentoId)
-        setItems(listaProductos)
+        queryRef = query(collection(db,"productos"), where("segmento", "==", segmentoId))
       }else{
-        setItems(result)
+        queryRef = collection(db, "productos")
       }
       
+      const data = getDocs(queryRef)
+      resolve(data)
+
+    })
+
+    getData.then((result) => {
+      
+      const productos = result.docs.map(doc =>{
+
+        const newProduct = {
+          ...doc.data(),
+          id: doc.id
+        }
+        return newProduct
+      })
+
+      setItems(productos)
+     
     })
   }, [segmentoId])
 

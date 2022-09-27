@@ -1,28 +1,34 @@
-import data from '../ItemListContainer/mock-data'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import './ItemDetailContainer.css'
+import {db} from "../../utils/firebase"
+import {doc, getDoc} from "firebase/firestore"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState([]);
     const {productId} = useParams();
     
-  
-    const getItem = new Promise((resolve, reject)=>{
-
-        setTimeout(() => {
-            resolve(data);
-        }, 2000)
-
-    })
-
     useEffect(()=> {
-        getItem.then((listaDeItems) => {
-           
-            const elegido = listaDeItems.find(producto => producto.id === productId);
-            setItem(elegido)
+        const getItem = new Promise((resolve, reject)=>{
 
+            const query = doc(db,"productos",productId)
+            const data = getDoc(query)
+            resolve(data);
+            
+
+        })
+
+    
+        getItem.then((result) => {
+            
+            const elegido = {
+                ...result.data(),
+                id: result.id
+            }
+            
+            setItem(elegido)
+            
         })
     }, [productId])
 

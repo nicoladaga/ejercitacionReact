@@ -4,20 +4,13 @@ import './CartContainer.css'
 import { Link } from 'react-router-dom'
 
 const CartContainer = () => {
-    const {productCartList, removeItem, clear} = useContext(CartContext);
+    const {productCartList, removeItem, clear, getTotal} = useContext(CartContext);
     const [totalProducto, setTotalProducto] = useState('');
     const [carritoVacio, setCarritoVacio] = useState(false);
 
     useEffect(() => {
        
-        const valoresCarrito = [];
-        productCartList.forEach((producto) => {
-            let valor = parseInt(producto.precio) * parseInt(producto.quantity)
-            valoresCarrito.push(valor)
-        })
-        const total = valoresCarrito.reduce((acumulador, valor) => acumulador + valor, 0)
-        total.toFixed(2)
-        setTotalProducto(total)
+        setTotalProducto(getTotal)
        
     }, [productCartList])
 
