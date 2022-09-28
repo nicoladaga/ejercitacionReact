@@ -26,7 +26,7 @@
 .contenedorCarrito-botonVaciar{
     background-color: orangered;
     color: white;
-    border-radius: 10%;
+    border-radius: 5px;
     cursor: pointer;
     width: 30%;
     font-size:medium;
@@ -37,5 +37,26 @@
     border-radius: 5px;
     color: white;
     font-size: large;
+    cursor: pointer
+}
+
+.cartContainerForm{
+    padding: 0.5rem;
+    display: flex;
+
+    
+}
+
+.cartContainerForm-input{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    margin-right: 0.8rem;
+    border-radius: 5px;
+}
+
+.cartContainerForm-finalizarCompra{
+    background-color: greenyellow;
+    border-radius: 5px;
     cursor: pointer
 }
