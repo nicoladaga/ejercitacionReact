@@ -23,3 +23,7 @@ también se pueden visualizar logs de errores en la consola de desarrollador.
 
 - Se utilizó la librería FontAwesome url: https://fontawesome.com/ para el ícono del carrito
 - Se utilizó la consola Firebase de google como ejemplo de base de datos url: https://console.firebase.google.com/project/coder-react-74af5/overview?hl=es-419
+
+
+https://user-images.githubusercontent.com/103679750/194956337-a2b74966-d496-4678-a665-2f0040ecee0f.mp4
+
