@@ -13,24 +13,34 @@ const CartContainer = () => {
 
     const sendOrder = (event) => {
         event.preventDefault()
+        
+        let nombre = event.target[0].value
+        let telefono = event.target[1].value
+        let correo = event.target[2].value
+        let repeticionCorreo = event.target[3].value
+
         const order = {
             buyer: {
-                name: event.target[0].value,
-                phone: event.target[1].value,
-                email: event.target[2].value
+                name: nombre,
+                phone: telefono,
+                email: correo,
             },
             items: productCartList,
             date: Date(),
             total: totalProducto
         }
+        //valida que la repetición sea igual al email antes de hacer el submit en la db
+        if (correo === repeticionCorreo) {
+            const queryRef = collection(db, "ordenes")
 
-        const queryRef = collection(db, "ordenes")
+            addDoc(queryRef, order).then(response => {
 
-        addDoc(queryRef, order).then(response => {
-
-            setIdOrder(response.id)
-            clear()
-        })
+                setIdOrder(response.id)
+                clear()
+            })
+        } else{
+            alert("los correos ingresados no coinciden")
+        }
 
     }
 
@@ -64,11 +74,13 @@ const CartContainer = () => {
                     <button className='contenedorCarrito-botonVaciar' onClick={() => clear()}>Vaciar Carrito</button>
                     <form className='cartContainerForm' onSubmit={sendOrder}>
                         <label >Nombre: </label>
-                        <input className='cartContainerForm-input' type="text" />
+                        <input className='cartContainerForm-input' type="text" required />
                         <label >Teléfono: </label>
-                        <input className='cartContainerForm-input' type="text" />
+                        <input className='cartContainerForm-input' type="text" required />
                         <label >email: </label>
-                        <input className='cartContainerForm-input' type="email" />
+                        <input className='cartContainerForm-input' type="email" required />
+                        <label >Repetir email: </label>
+                        <input className='cartContainerForm-input' type="email" required />
                         <button className='cartContainerForm-finalizarCompra' type='submit'>Finalizar Compra</button>
                     </form>
                 </div>
@@ -77,13 +89,13 @@ const CartContainer = () => {
         )
 
     } else if (idOrder) {
-        return(
+        return (
             <>
                 <p>Se creó su orden con id: {idOrder}</p>
                 <button className='botonContinuarComprando'><Link className='botonContinuarComprando' to="/">Continuar Comprando!</Link></button>
             </>
         )
-        
+
     } else {
         return (
             <>
