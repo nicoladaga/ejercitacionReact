@@ -5,10 +5,12 @@
     flex-flow: column;
     padding: 1rem;
     width: 10%;
-    height: 22rem;
+    height: fit-content;
     border-style: solid;
     border-color: orange;
     border-radius: 2%;
+    margin-bottom: 0.5rem;
+    
     
 }
 
