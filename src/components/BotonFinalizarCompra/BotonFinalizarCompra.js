@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './BotonFinalizarCompra.css';
+//import './BotonFinalizarCompra.css';
+import '../../css/estilo.css'
 
 const BotonFinalizarCompra = () => {
   return (

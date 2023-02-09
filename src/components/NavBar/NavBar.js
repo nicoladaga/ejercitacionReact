@@ -1,5 +1,5 @@
 import logo from '../../logoSinTexto.png';
-import './NavBar.css';
+import '../../css/estilo.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink } from 'react-router-dom'
 import { useContext } from 'react';
@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <div className='navbar-container'>
             <div>
-                <Link to="/"><img className='logo' src={logo} alt="logo" width={'100px'} /></Link>
+                <Link to="/"><img className='logo' src={logo} alt="logo" /></Link>
 
             </div>
             <div>
@@ -37,7 +37,7 @@ const NavBar = () => {
 
                 </ul>
             </div>
-            <div className='navbar-list-element'>
+            <div className='navbar-cart'>
                 <NavLink className={({ isActive }) => isActive ? "linkActivo" : "linkInactivo"} to="/carrito">
                     {productCartList.length > 0 ? <CartWidget /> : null}
                 </NavLink>

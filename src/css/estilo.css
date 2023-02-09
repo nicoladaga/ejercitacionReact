@@ -1,0 +1,308 @@
+body {
+  background-color: #ec7105; }
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 6.5rem;
+  background-color: #ec7105; }
+  .navbar-container .logo {
+    width: 5rem; }
+  .navbar-container .navbar-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    padding: 0; }
+  .navbar-container .navbar-cart {
+    font-size: xx-large; }
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0; }
+
+.navbar-list-element {
+  font-size: xx-large; }
+
+.linkActivo {
+  color: white;
+  opacity: 0.5;
+  text-decoration: none; }
+
+.linkInactivo {
+  color: white;
+  opacity: 1;
+  text-decoration: none; }
+
+.dropbtn {
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ec9f05;
+  top: 5rem;
+  font-size: 1.5rem;
+  z-index: 1;
+  border: solid;
+  border-color: white; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+.dropdown-content :hover {
+  background-color: rgba(255, 255, 255, 0.514); }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: white;
+  opacity: 0.5; }
+
+.itemlist {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: space-evenly;
+  padding: 0.5rem; }
+
+.ItemDetail {
+  display: flex;
+  justify-content: center; }
+
+.item-detail {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  height: max-content;
+  padding: 1rem;
+  margin: 1rem;
+  border-style: solid;
+  border-color: #ec7105;
+  border-radius: 10px; }
+
+.imagen-detail {
+  width: 100%;
+  justify-content: center; }
+
+.detalle-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  height: 50%; }
+  .detalle-detail .descripcion-detail {
+    font-size: large; }
+
+.contenedorItemCount {
+  display: flex;
+  flex-direction: column;
+  background-color: #ec7105;
+  opacity: 0.8;
+  color: white;
+  border-radius: 10px;
+  width: 60%; }
+  .contenedorItemCount .stockTitle {
+    margin: 0.2rem; }
+  .contenedorItemCount .contador {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .contenedorItemCount .contador .elementoContador {
+      padding: 0.5rem; }
+    .contenedorItemCount .contador .botonContador {
+      height: 5%;
+      width: 20%;
+      font-size: larger;
+      background-color: transparent;
+      border-radius: 10px;
+      color: white;
+      border-color: white;
+      border-width: 0.2rem; }
+
+.botonAgregar {
+  background-color: transparent;
+  border-radius: 10px;
+  color: white;
+  border-color: white;
+  border-width: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 50%;
+  align-self: center; }
+
+.botonItemCount {
+  cursor: pointer; }
+  .botonItemCount:disabled {
+    background-color: black;
+    opacity: 0.5;
+    cursor: default; }
+
+.item {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  width: 40%;
+  height: fit-content;
+  border-style: solid;
+  border-color: #ec7105;
+  border-radius: 10px;
+  margin-bottom: 0.5rem; }
+
+.imagen {
+  width: 100%;
+  justify-content: center; }
+
+.detalle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  height: 55%; }
+
+.descripcion {
+  font-size: small; }
+
+.item-button-area {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .item-button-area .item-button {
+    background-color: #ec7105;
+    color: whitesmoke;
+    height: 100%;
+    border-radius: 10%; }
+    .item-button-area .item-button:hover {
+      cursor: pointer; }
+
+@media screen and (min-width: 750px) {
+  .item {
+    width: 20%; } }
+
+.carrito {
+  display: flex; }
+  .carrito .carrito-cantidad {
+    font-size: medium; }
+
+.contenedorCarrito {
+  border-style: solid;
+  border-color: #ec7105;
+  padding: 0.5rem;
+  width: max-content; }
+
+.contenedorCarrito-items {
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: solid;
+  border-color: #ec7105;
+  justify-content: center; }
+
+.contenedorCarrito-botonRemover {
+  margin-left: 0.5rem;
+  height: 50%;
+  align-self: center;
+  background-color: #ff4e00;
+  color: white;
+  border-radius: 30%;
+  cursor: pointer; }
+
+.contenedorCarrito-botonVaciar {
+  background-color: #ff4e00;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  font-size: medium; }
+
+.botonContinuarComprando {
+  background-color: #ec7105;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  cursor: pointer; }
+
+.cartContainerForm {
+  padding: 0.5rem;
+  display: flex; }
+
+.cartContainerForm-input {
+  background-color: #ec7105;
+  color: white;
+  font-weight: bold;
+  margin-right: 0.8rem;
+  border-radius: 5px; }
+
+.cartContainerForm-finalizarCompra {
+  background-color: greenyellow;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.contenedorBotonFinalizarCompra {
+  background-color: #ec7105;
+  border-radius: 10px;
+  padding: 0.5rem; }
+  .contenedorBotonFinalizarCompra .botonFinalizarCompra {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer; }
+
+.linkFinalizarCompra {
+  font-size: large;
+  color: black;
+  font-weight: bolder; }
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: #ec7105; }
+  .footer-container .footer-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .footer-container .footer-list .footer-link {
+      color: white;
+      opacity: 0.5;
+      font-size: 2rem;
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+      padding: 0.3rem;
+      cursor: pointer;
+      border: solid;
+      border-radius: 10px;
+      transition: all 1s; }
+      .footer-container .footer-list .footer-link:hover {
+        font-size: 2.5rem;
+        opacity: 1; }

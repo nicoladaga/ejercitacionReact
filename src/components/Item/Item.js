@@ -1,4 +1,5 @@
-import './Item.css'
+//import './Item.css'
+import '../../css/estilo.css'
 import {Link} from 'react-router-dom'
 
 

@@ -1,4 +1,5 @@
-import './ItemDetail.css'
+//import './ItemDetail.css'
+import '../../css/estilo.css'
 import ItemCount from '../ItemCount/ItemCount'
 import {useContext, useState} from 'react'
 import { CartContext } from '../../context/CartContext'

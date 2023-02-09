@@ -1,0 +1,23 @@
+$primaryColor: #ec7105;
+$secondaryColor: #ec9f05;
+$positiveColor: greenyellow;
+$negativeColor: #ff4e00;
+$grey: rgba(255, 255, 255, 0.514);
+$lightGrey: rgba(255, 255, 255, 0.801);
+
+
+body{
+    background-color: $primaryColor;
+    
+}
+
+@import "navBar";
+@import "itemListContainer";
+@import "itemDetailContainer";
+@import "itemDetail";
+@import "itemCount";
+@import "item";
+@import "cartWidget";
+@import "cartContainer";
+@import "botonFinalizarCompra";
+@import "footer";

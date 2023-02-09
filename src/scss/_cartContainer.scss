@@ -1,0 +1,63 @@
+.contenedorCarrito{
+    border-style: solid;
+    border-color: $primaryColor;
+    padding: 0.5rem;
+    width:max-content
+}
+
+.contenedorCarrito-items{
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: solid;
+    border-color: $primaryColor;
+    justify-content: center;
+
+}
+
+.contenedorCarrito-botonRemover{
+    margin-left: 0.5rem;
+    height: 50%;
+    align-self: center;
+    background-color: $negativeColor;
+    color: white;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.contenedorCarrito-botonVaciar{
+    background-color: $negativeColor;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size:medium;
+}
+
+.botonContinuarComprando{
+    background-color: $primaryColor;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    cursor: pointer
+}
+
+.cartContainerForm{
+    padding: 0.5rem;
+    display: flex;
+
+    
+}
+
+.cartContainerForm-input{
+    background-color: $primaryColor;
+    color: white;
+    font-weight: bold;
+    margin-right: 0.8rem;
+    border-radius: 5px;
+}
+
+.cartContainerForm-finalizarCompra{
+    background-color: $positiveColor;
+    border-radius: 5px;
+    cursor: pointer
+}

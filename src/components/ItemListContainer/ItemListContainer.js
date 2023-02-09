@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import './ItemListContainer.css'
+//import './ItemListContainer.css'
+import '../../css/estilo.css'
 import ItemList from '../ItemList/ItemList'
 import {useParams} from 'react-router-dom'
 import {db} from "../../utils/firebase"

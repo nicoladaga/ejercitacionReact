@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { CartContext } from '../../context/CartContext'
-import './CartContainer.css'
+//import './CartContainer.css'
+import '../../css/estilo.css'
 import { Link } from 'react-router-dom'
 import { db } from '../../utils/firebase'
 import { collection, addDoc } from "firebase/firestore"

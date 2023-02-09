@@ -1,7 +1,8 @@
 import ItemDetail from '../ItemDetail/ItemDetail'
 import {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
-import './ItemDetailContainer.css'
+//import './ItemDetailContainer.css'
+import '../../css/estilo.css'
 import {db} from "../../utils/firebase"
 import {doc, getDoc} from "firebase/firestore"
 import Item from '../Item/Item'

@@ -1,0 +1,98 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 6.5rem;
+    background-color: $primaryColor;
+    .logo{
+      width: 5rem;
+    }
+    .navbar-list{
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      justify-content: space-between;
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+      padding: 0; 
+  }
+  .navbar-cart{
+    font-size: xx-large;
+  }
+}
+
+
+.navbar-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; 
+}
+
+.navbar-list-element{
+    font-size: xx-large;
+    
+}
+
+.linkActivo{
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.linkInactivo{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $secondaryColor;
+    top: 5rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    border:solid;
+    border-color: white;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content :hover {background-color: $grey}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    color: white;
+    opacity: 0.5;
+  }
+  

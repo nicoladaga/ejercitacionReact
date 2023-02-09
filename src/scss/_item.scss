@@ -1,0 +1,52 @@
+.item{
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    width: 40%;
+    height: fit-content;
+    border-style: solid;
+    border-color: $primaryColor;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.imagen{
+    width: 100%;
+    justify-content: center;
+}
+
+.detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    height: 55%;
+}
+
+.descripcion{
+    font-size: small
+}
+
+.item-button-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .item-button{
+        background-color: $primaryColor;
+        color: whitesmoke;
+        height: 100%;
+        border-radius: 10%;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 750px){
+
+    .item{
+        width: 20%;
+    }
+}
+
