@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ejercitacionReact/static/css/main.0ff9c03e.css",
+    "main.js": "/ejercitacionReact/static/js/main.b2e87b1a.js",
+    "static/js/787.9ff85de6.chunk.js": "/ejercitacionReact/static/js/787.9ff85de6.chunk.js",
+    "static/media/logoSinTexto.png": "/ejercitacionReact/static/media/logoSinTexto.6d91ff0f01d11d975e8a.png",
+    "index.html": "/ejercitacionReact/index.html",
+    "main.0ff9c03e.css.map": "/ejercitacionReact/static/css/main.0ff9c03e.css.map",
+    "main.b2e87b1a.js.map": "/ejercitacionReact/static/js/main.b2e87b1a.js.map",
+    "787.9ff85de6.chunk.js.map": "/ejercitacionReact/static/js/787.9ff85de6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0ff9c03e.css",
+    "static/js/main.b2e87b1a.js"
+  ]
+}
